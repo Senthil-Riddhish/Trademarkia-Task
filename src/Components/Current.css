@@ -4,6 +4,12 @@
     width: 100vw;
     margin: 5vh;
 }
+.currentBody{
+    margin: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 span.sp{
     content: "\00B0";
 }

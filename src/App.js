@@ -12,6 +12,7 @@ function App() {
   const [clicked, setClicked] = useState(false);
   const [current, setCurrent] = useState();
   const [forecast, setforecast] = useState();
+  const [location,setlocation]=useState(``);
 
   //using useEffect for the search for a country:
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
     console.log(data);
     setCurrent(data.current);
     setforecast(data.forecast);
+    setlocation(data.location.name);
   }
   return (
     <div className="App">
@@ -65,8 +67,8 @@ function App() {
             ))}
           </div>
         )}
-        {current && <Current current={current} city={city} />}
-        {forecast && <Forescast forecast={forecast}/>}
+        {current && <Current current={current} city={location}/>}
+        {forecast && <Forescast forecast={forecast} city={location}/>}
       </header>
     </div>
   );
