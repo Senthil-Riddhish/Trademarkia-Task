@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Forecasr.css';
+import LinearProgress from '@mui/material/LinearProgress';
 function Forescast({ forecast: { forecastday }, city }) {
     const [expanded, setExpanded] = useState(false);
     console.log(forecastday);
@@ -43,7 +44,21 @@ function Forescast({ forecast: { forecastday }, city }) {
                                 </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-
+                                {
+                                    hour.map((curHour,index)=>{
+                                        return(
+                                            <div className='hourtrack'>
+                                                <b>{index}:00</b>
+                                                <img src={curHour.condition.icon}/>
+                                                <div className='progress'>
+                                                <LinearProgress variant="determinate" value=
+                                                {curHour.temp_c*100/maxtemp_c} />
+                                                {curHour.temp_c}deg
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
                             </AccordionDetails>
                         </Accordion>
                     )
