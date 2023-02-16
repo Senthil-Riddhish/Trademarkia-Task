@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+.App {
+  text-align: center;
+  background-color: #8bbef0;
+}
+.Head{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+  color: whitesmoke;
+  border-bottom:2px solid #8bbef0;
+  box-shadow: 20px 20px 50px 10px rgb(222, 231, 230) inset;
+  position: sticky;
+  top: 0;
+}
+.citytextbox{
+  height: 5vh;
+  width: 80vw;
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+.App-header {
+  background-color: #c7d3ec;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
