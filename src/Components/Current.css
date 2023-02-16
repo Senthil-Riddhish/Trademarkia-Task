@@ -1,0 +1,9 @@
+.current{
+    background-color: rgb(240, 213, 181);
+    color: black;
+    width: 100vw;
+    margin: 5vh;
+}
+span.sp{
+    content: "\00B0";
+}

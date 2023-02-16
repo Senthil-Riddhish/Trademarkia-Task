@@ -23,13 +23,34 @@
   font-family: 'Arvo', serif;
   text-align: center;
 }
-.App-header {
+.suggestion{
+  background-color: white;
+  width: 75vw;
+  color: black;
+  height:5vh;
+  border-bottom: 1px solid rgb(128, 215, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arvo', serif;
+  border: 1px solid rgb(195, 244, 237);
+}
+.suggestion:hover{
+  color: #93afeb;
+  cursor: pointer;
+}
+.cityoptionwrapper{
+  height: 30vh;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+.App_body {
+  margin-top: 0vh;
   background-color: #c7d3ec;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
