@@ -1,4 +1,4 @@
-#TradeMarkia Climate Website
+# TradeMarkia Climate Website
 
 In the project directory, you can run:
 
