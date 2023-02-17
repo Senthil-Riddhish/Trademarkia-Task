@@ -26,7 +26,7 @@ function Storage() {
   return (
     <div className="App">
       <div className='Head'>
-        <div>TradeMarke Climate Webiste</div>
+        <div>TradeMarkia Climate Webiste</div>
         <div><button className='buttn' onClick={() => navigate('/')}>Climate</button></div>
       </div>
       <header className="App_body">

@@ -85,7 +85,7 @@ function App() {
   return (
     <div className="App">
       <div className='Head'>
-        <div>TradeMarke Climate Webiste</div>
+        <div>TradeMarkia Climate Webiste</div>
         <div><button className='buttn' onClick={() => navigate('/Storage')}>Storage</button></div>
       </div>
       <header className="App_body">
