@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 .forecasrsection{
     width: 90vw;
 }
@@ -9,3 +10,14 @@
 .progress{
     width: 70%;
 }
+.city_head{
+    font-family: 'Crimson Text', serif;
+    color: rgb(216, 119, 243);
+    font-size: xx-large;
+}
+@media screen and (max-width: 700px) {
+    .cls{
+        font-size: 10px;
+        margin: 0px;
+    }
+  }

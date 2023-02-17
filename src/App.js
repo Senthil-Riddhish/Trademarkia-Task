@@ -6,7 +6,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<ButtonSwitch />} />
         <Route path="/" element={<Climate />} />
         <Route path="/Storage" element={<Storage />} />
       </Routes>

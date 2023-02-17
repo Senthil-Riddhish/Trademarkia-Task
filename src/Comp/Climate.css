@@ -12,9 +12,10 @@
   font-size: 1.5rem;
   color: whitesmoke;
   border-bottom:2px solid #8bbef0;
-  box-shadow: 20px 20px 50px 10px rgb(222, 231, 230) inset;
+  box-shadow: 20px 20px 50px 10px rgb(228, 151, 235) inset;
   position: sticky;
   top: 0;
+  background-color: rgb(115, 227, 209);
 }
 .citytextbox{
   height: 5vh;
@@ -62,5 +63,8 @@
   align-items: center;
 }
 .buttn{
-  border-radius: 10px;
+  border-radius: 20px;
+  background-color: #93afeb;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: rgb(244, 238, 52);
 }
