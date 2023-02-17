@@ -1,0 +1,21 @@
+.current{
+    background-color: rgb(240, 213, 181);
+    color: black;
+    width: 100vw;
+    margin: 5vh;
+}
+.currentBody{
+    margin: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span.sp{
+    content: "\00B0";
+}
+.head_part{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border: 2px solid red;
+}
