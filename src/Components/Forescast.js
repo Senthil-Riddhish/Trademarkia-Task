@@ -9,7 +9,6 @@ import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 function Forescast({ forecast: { forecastday }, city }) {
     const [expanded, setExpanded] = useState(false);
-    console.log(forecastday);
     const handleChange =
         (panel) => (event, isExpanded) => {
             setExpanded(isExpanded ? panel : false);
@@ -18,7 +17,7 @@ function Forescast({ forecast: { forecastday }, city }) {
         <div className='forecasrsection'>
             <div className='city_head'>Forescast for {city}</div>
             {
-                forecastday.map((curDateForecast) => {
+                forecastday.map((curDateForecast,index) => {
                     const { date, day, hour } = curDateForecast;
                     const { maxtemp_c, mintemp_c,
                         maxtemp_f, mintemp_f, daily_chance_of_rain

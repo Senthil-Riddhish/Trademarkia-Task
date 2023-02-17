@@ -3,9 +3,7 @@ import './View.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 const View = () => {
     const data = JSON.parse(localStorage.getItem('climate'));
-    console.log(data);
     const handleDelete = (blogOIndex) => {
-        console.log(blogOIndex);
         const _data = data.filter((doc, blogIIndex) => {
             if (blogIIndex !== blogOIndex) {
                 return doc;
@@ -19,7 +17,7 @@ const View = () => {
             {
                 data.map((objs, objIndex) => {
                     return (
-                        <div className='current' style={{ backgroundColor: "rgb(180, 214, 232)" }}>
+                        <div className='current' style={{ backgroundColor: "rgb(180, 214, 232)" }} key={objIndex}>
                             <div className='head_part'>
                                 <div><b>{objs.location}</b></div>
                                 <DeleteIcon onClick={() => handleDelete(objIndex)}></DeleteIcon>

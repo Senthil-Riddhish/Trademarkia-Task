@@ -32,11 +32,10 @@ function App() {
   useEffect(() => {
     const getDuration = setTimeout(() => {
       const fetchcityfromAPI = async () => {
-        console.log(city);
         const resp = await fetch(`https://api.weatherapi.com/v1/search.json?key=8fb866c30f1e407a89b73055231602&q=` + city);
         const data = await resp.json();
         const cityData = data.map(
-          (curData) => `${curData.name},${curData.region},${curData.country}`);
+          (curData,i) => `${curData.name},${curData.region},${curData.country}`);
         setcitySug(cityData);
       }
       if (city.length > 2 && !clicked) {
@@ -58,7 +57,7 @@ function App() {
     //method calling for the Entered City
     const resp = await fetch(weatherAPI(city));
     const data = await resp.json();
-    console.log(data); setinfo(true);
+    setinfo(true);
     setCurrent(data.current);
     setforecast(data.forecast);
     setlocation(data.location.name);
@@ -97,8 +96,8 @@ function App() {
         </input>
         {citySug.length > 0 && (
           <div className='cityoptionwrapper'>
-            {citySug.map(curr => (
-              <div className='suggestion' onClick={() => handleClick(curr)}>
+            {citySug.map((curr,index)=> (
+              <div className='suggestion' key={index} onClick={() => handleClick(curr)}>
                 {curr}
               </div>
             ))}
