@@ -7,7 +7,7 @@
 First clone this repository.
 
 ```bash
-$ git clone https://github.com/sakilk130/react-weather-app.git
+$ git clone https://github.com/Senthil-Riddhish/Trademarkia-Task.git
 ```
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
 
