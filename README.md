@@ -1,8 +1,4 @@
 # TradeMarkia Climate Website
-
-In the project directory, you can run:
-
-### `npm start`
 [screen-capture.webm](https://user-images.githubusercontent.com/82893678/219559272-68917e46-26b4-4ca9-bde6-9c5b910a1d5f.webm)
 
 Runs the app in the development mode.\
